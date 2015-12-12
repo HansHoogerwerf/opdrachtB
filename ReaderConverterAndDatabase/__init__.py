@@ -10,14 +10,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from multiprocessing import Process
 
-import websocket
 
-ConnectionsArray = []
-EventsArray = []
-MonitoringArray = []
-PositionsArray = []
-TotalCount = 0
-wss = websocket.WebSocket()
 
 
 Base = declarative_base()
