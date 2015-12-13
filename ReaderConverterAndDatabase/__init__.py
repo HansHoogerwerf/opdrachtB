@@ -152,7 +152,6 @@ def splitPositionsData():
 if __name__ == '__main__':
 
         starttime = time.time()
-       #todo async
         print("start")
 
 
