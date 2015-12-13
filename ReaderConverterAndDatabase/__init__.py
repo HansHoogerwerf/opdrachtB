@@ -92,6 +92,7 @@ def splitConnectionsData():
 
 
         print("connection counted: ", count)
+        return count
 
 
 
@@ -160,12 +161,12 @@ if __name__ == '__main__':
         ConnectionsDataParserThread = Process(splitConnectionsData(), args=())
         EventsDataParserThread = Process(splitEventsData(), args=())
         MonitoringDataParserThread = Process(splitMonitoringData(), args=())
-        PositionsDataParserThread = Process(splitPositionsData(), args=())
+        #PositionsDataParserThread = Process(splitPositionsData(), args=())
 
         ConnectionsDataParserThread.start()
         EventsDataParserThread.start()
         MonitoringDataParserThread.start()
-        PositionsDataParserThread.start()
+        #PositionsDataParserThread.start()
 
         # ConnectionsDataParserThread.join()
         # EventsDataParserThread.join()
