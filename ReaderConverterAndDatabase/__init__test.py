@@ -6,12 +6,20 @@ from __init__ import splitConnectionsData
 class splitConnectionsTestCase(unittest.TestCase):
 
     def setUp(self):
-        pass
+        print("setup")
 
-    def test_something(self):
+        print("setup completed")
 
-        self.assertEqual(True, True)
+    def test_split_connection(self):
+        print("testing connections!")
+        splitConnectionsData()
+
+
+        print("testing connections complete!")
+
+
 
 
 if __name__ == '__main__':
     unittest.main()
+
