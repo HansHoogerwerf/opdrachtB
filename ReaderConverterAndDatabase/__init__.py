@@ -130,7 +130,7 @@ def splitMonitoringData():
 
 
         print("Monitoring counted: ", count)
-        TotalCount + count
+
 
 
 def splitPositionsData():
@@ -148,10 +148,9 @@ def splitPositionsData():
             session.commit()
 
         print("positions counted: ", count)
-        TotalCount + count
 
 if __name__ == '__main__':
-    try:
+
         starttime = time.time()
        #todo async
         print("start")
@@ -187,12 +186,6 @@ if __name__ == '__main__':
         splitPositionsData()
         """
 
-
-
-
-
-    except FileNotFoundError as FNFE:
-        print("File not found")
 
 
 
