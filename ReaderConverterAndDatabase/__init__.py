@@ -158,7 +158,7 @@ if __name__ == '__main__':
 
         splitConnectionsData()
         splitEventsData()
-        splitMonitoringData()
+        #splitMonitoringData()
         #splitPositionsData()
 
 
