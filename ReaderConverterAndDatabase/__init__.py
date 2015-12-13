@@ -156,21 +156,26 @@ if __name__ == '__main__':
         print("start")
 
 
+        splitConnectionsData()
+        splitEventsData()
+        splitMonitoringData()
+        #splitPositionsData()
 
-        ConnectionsDataParserThread = Process(splitConnectionsData(), args=())
-        EventsDataParserThread = Process(splitEventsData(), args=())
-        MonitoringDataParserThread = Process(splitMonitoringData(), args=())
-        #PositionsDataParserThread = Process(splitPositionsData(), args=())
 
-        ConnectionsDataParserThread.start()
-        EventsDataParserThread.start()
-        MonitoringDataParserThread.start()
-        #PositionsDataParserThread.start()
-
-        # ConnectionsDataParserThread.join()
-        # EventsDataParserThread.join()
-        # MonitoringDataParserThread.join()
-        # PositionsDataParserThread.join()
+        # ConnectionsDataParserThread = Process(splitConnectionsData(), args=())
+        # EventsDataParserThread = Process(splitEventsData(), args=())
+        # MonitoringDataParserThread = Process(splitMonitoringData(), args=())
+        # #PositionsDataParserThread = Process(splitPositionsData(), args=())
+        #
+        # ConnectionsDataParserThread.start()
+        # EventsDataParserThread.start()
+        # MonitoringDataParserThread.start()
+        # #PositionsDataParserThread.start()
+        #
+        # # ConnectionsDataParserThread.join()
+        # # EventsDataParserThread.join()
+        # # MonitoringDataParserThread.join()
+        # # PositionsDataParserThread.join()
         endtime = time.time()
 
         total_time = endtime - starttime
