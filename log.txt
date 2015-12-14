@@ -79,3 +79,19 @@ A	log.txt~
 Your branch is up-to-date with 'origin/master'.
 adding everything
 commiting master build
+[master f5615af] master build
+ 8 files changed, 204 insertions(+)
+ create mode 100755 build.sh
+ create mode 100755 build.sh~
+ create mode 100755 checkout.sh
+ create mode 100755 checkout.sh~
+ create mode 100755 dependecies.sh
+ create mode 100755 dependecies.sh~
+ create mode 100644 log.txt
+ create mode 100644 log.txt~
+pushing
+M	log.txt
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+adding everything
+commiting master build
