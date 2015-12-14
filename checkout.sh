@@ -10,7 +10,11 @@ git add *
 
 echo "commiting master build"
 
-git commit -am "master build"
+read -p "commit message?" commitMessage
+
+git commit -am $commitMessage
+
+echo "commmit message $commitMessage"
 
 echo "pushing"
 

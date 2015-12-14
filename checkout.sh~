@@ -24,4 +24,6 @@ xdg-open http://localhost:8080/job/opdrachtB/build?delay=0sec
 
 echo "http://localhost:8080/job/opdrachtB open the job!"
 
+xdg-open http://localhost:8080/job/opdrachtB/
+
 
