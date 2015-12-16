@@ -11,16 +11,16 @@ read -p "Unittest the software? [y/n]" answer
 if [[ $answer = y ]] ; then
   
   echo "Unit testing!"
-  ./unittest.sh >> buildlog.txt
+  ./unittest.sh > buildlog.txt
 
 fi
 
 read -p "Checkout the code quality of the software? [y/n]" answer
 if [[ $answer = y ]] ; then
   
-  echo "Checking out!"
+  echo "Checking quality!"
   pwd
-  ./checkout.sh >> buildlog.txt
+  ./codequality.sh > buildlog.txt
 
 fi
 
@@ -29,7 +29,7 @@ if [[ $answer = y ]] ; then
   
   echo "Checking out!"
   pwd
-  ./checkout.sh >> buildlog.txt
+  ./checkout.sh > buildlog.txt
 
 fi
 
