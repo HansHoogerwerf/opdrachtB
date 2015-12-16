@@ -3,7 +3,24 @@ if [[ $answer = y ]] ; then
   
   echo "installing dependecies"
   pwd
-  ./dependecies.sh >> log.txt
+  ./dependecies.sh >> buildlog.txt
+
+fi
+
+read -p "Unittest the software? [y/n]" answer
+if [[ $answer = y ]] ; then
+  
+  echo "Unit testing!"
+  ./unittest.sh >> buildlog.txt
+
+fi
+
+read -p "Checkout the code quality of the software? [y/n]" answer
+if [[ $answer = y ]] ; then
+  
+  echo "Checking out!"
+  pwd
+  ./checkout.sh >> buildlog.txt
 
 fi
 
@@ -12,7 +29,7 @@ if [[ $answer = y ]] ; then
   
   echo "Checking out!"
   pwd
-  ./checkout.sh >> log.txt
+  ./checkout.sh >> buildlog.txt
 
 fi
 
